@@ -29,6 +29,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- CSS del Sitemap -->
+  <link href="assets/css/map.css" rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: OnePage
   * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
@@ -61,6 +64,7 @@
           <li><a href="#services">Servicios</a></li>
           <li class="dropdown"><a href="#"><span>Varios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
+              <li><a href="#" id="openModalBtn">Mapa del Sitio</a></li>
               <li><a href="#testimonials">Testimonios</a></li>
               <!--<li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
@@ -80,9 +84,9 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <!--<a class="btn-getstarted" href="#about">Empezar</a>-->
+    <!--<a class="btn-getstarted" href="#about">Empezar</a>-->
 
-     <!-- Botón para abrir el selector de idiomas -->
+    <!-- Botón para abrir el selector de idiomas -->
     <!-- <button onclick="document.getElementById('google_translate_element').style.display='block'">Cambiar Idioma</button> -->
 
     <!--<button class="btn-getstarted" onclick="document.getElementById('google_translate_element').style.display='block'">Cambiar Idioma</button>-->
@@ -112,8 +116,41 @@
     <!-- Script de Google Translate -->
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    </div>
   </header>
+
+  <!-- Modal para el mapa del sitio -->
+  <div id="sitemapModal" class="modal">
+   <div class="modal-content">
+     <span class="close" id="closeModalBtn">&times;</span>
+     <h2>Mapa del Sitio de <b>Geidy Estrada | Abogados</b>  </h2>
+     <ul>
+       <li><a href="#hero"><h5><b>Inicio</b> <i>(Inicio de la página principal)</i></h5></a></li>
+       <li><a href="#about"><h5><b>Acerca</b> <i>(Información general del despacho)</i></h5></a></li>
+       <li><a href="#office"><h5><b>Oficina</b> <i>(detalles sobre la oficina del despacho)</i></h5></a></li>
+       <li>
+         <a href="#services"><h5><b>Servicios</b><i> (Acceso a todos los servicios del despacho)</i></h5></a>
+         <ul>
+           <li><a href="service-details.html#extranjeria"><h6><b>Derecho de Extranjería</b><i> (Detalles del servicio)</i></h6></a></li>
+           <li><a href="service-details.html#familia"><h6><b>Derecho de Familia</b><i> (Detalles del servicio)</i></h6></a></li>
+           <li><a href="service-details.html#civil"><h6><b>Derecho Civil</b><i> (Detalles del servicio)</i></h6></a></li>
+           <li><a href="service-details.html#laboral"><h6><b>Derecho Laboral</b><i> (Detalles del servicio)</i></h6></a></li>
+           <li><a href="service-details.html#penal"><h6><b>Derecho Penal</b><i> (Detalles del servicio)</i></h6></a></li>
+           <li><a href="service-details.html#administrativo"><h6><b>Derecho Administrativo</b><i> (Detalles del servicio)</i></h6></a></li>
+         </ul>
+       </li>
+       <li>
+        <a href="#"><h5><b>Varios</b><i> (Submenú con otras secciones)</i></h5></a>
+        <ul>
+          <li><a href="#testimonials"><h5><b>Testimonios</b><i> (Testimonios de cllientes reales)</i></h5></a></li>
+          <li><a href="#team"><h5><b>Equipo de Trabajo</b><i> (Presentación del equipo)</i></h5></a></li>
+          <li><a href="#faq"><h5><b>FAQs</b><i> (Preguntas frecuentes y sus respuestas)</i></h5></a></li>
+        </ul>
+          </li>
+        <li><a href="#contact"><h5><b>Contacto</b><i> (Todos los datos para contactarnos)</i></h5></a></li>
+      </ul>
+    </div>
+  </div>
+
 
   <!-- Modal for Enlarged Image -->
   <div class="modal fade" id="logoModal" tabindex="-1" aria-labelledby="logoModalLabel" aria-hidden="true">
@@ -170,7 +207,7 @@
         <div class="row gy-4 mt-5">
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-easel"></i></div>
+              <div class="icon"><i class="bi bi-people"></i></div>
               <h4 class="title"><a href="">Civil y Familiar:</a></h4>
               <p class="description">Asesoría y orientación en disputas civiles, divorcios, custodias y herencias.</p>
             </div>
@@ -178,7 +215,7 @@
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-gem"></i></div>
+              <div class="icon"><i class="bi bi-shield-check"></i></div>
               <h4 class="title"><a href="">Penal y Administrativo:</a></h4>
               <p class="description">Representación en casos penales complejos o asesoría en procesos administrativos de alto nivel.</p>
             </div>
@@ -186,7 +223,7 @@
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <div class="icon"><i class="bi bi-globe"></i></div>
               <h4 class="title"><a href="">Inmigración y Extranjería:</a></h4>
               <p class="description">Servicios especializados en inmigración, permisos de trabajo, residencia y nacionalidad.</p>
             </div>
@@ -194,7 +231,7 @@
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bi bi-command"></i></div>
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
               <h4 class="title"><a href="">Laboral y Social:</a></h4>
               <p class="description">Estrategias legales para empresas y trabajadores, resolución de disputas laborales, y gestión de contratos.</p>
             </div>
@@ -498,7 +535,7 @@
                 </svg>
                 <i class="bi bi-passport"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="service-details.html#extranjeria" class="stretched-link">
                 <h3>Extranjería</h3>
               </a>
               <p>Tramitación de solicitudes y renovaciones de nacionalidad y residencias en España. Arraigos, reagrupaciones familiares, cartas de invitación.</p>
@@ -513,7 +550,7 @@
                 </svg>
                 <i class="bi bi-people-fill"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="service-details.html#familia" class="stretched-link">
                 <h3>Familia</h3>
               </a>
               <p>Tramitación de divorcios contenciosos y de mutuo acuerdo, guardas y custodias, pensiones, adopciones. Parejas de hecho, matrimonios mixtos.</p>
@@ -528,7 +565,7 @@
                 </svg>
                 <i class="bi bi-person-check-fill"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="service-details.html#civil" class="stretched-link">
                 <h3>Civil</h3>
               </a>
               <p>Contratos, reclamaciones por daños, herencias, disputas civiles. Resolución de conflictos entre particulares, de vecindad y convivencia.</p>
@@ -543,11 +580,11 @@
                 </svg>
                 <i class="bi bi-person-fill-gear"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="service-details.html#laboral" class="stretched-link">
                 <h3>Laboral</h3>
               </a>
               <p>Asesoramos tanto a trabajadores como a empleadores en asuntos como despidos, reclamaciones salariales, acoso laboral, indemnizaciones, contratos.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="service-details.html#laboral" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -559,11 +596,11 @@
                 </svg>
                 <i class="bi bi-person-lines-fill"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="service-details.html#administrativo" class="stretched-link">
                 <h3>Administrativo</h3>
               </a>
               <p>Asesoramos tanto a particulares como a empresas en sus relaciones con la administración pública. Gestionamos recursos, sanciones, licencias, permisos, expropiaciones, demandas.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="service-details.html#administrativo" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -575,11 +612,11 @@
                 </svg>
                 <i class="bi bi-person-fill-lock"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="service-details.html#penal" class="stretched-link">
                 <h3>Penal</h3>
               </a>
               <p>Defendiendo a nuestros clientes en casos de delitos como robo, fraude, violencia, y otros delitos graves, durante todo el proceso penal, desde la fase de investigación y hasta el juicio oral.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="service-details.html#penal" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -1156,7 +1193,9 @@
             <li><a href="#about">Acerca</a></li>
             <li><a href="#office">Oficina</a></li>
             <li><a href="#services">Servicios</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#testimonials">Testimonios</a></li>
+            <li><a href="#team">Equipo</a></li>
+            <li><a href="#faq">Faqs</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
         </div>
@@ -1164,11 +1203,12 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Nuestros Servicios</h4>
           <ul>
-            <li><a href="#">Extranjería e Inmigración</a></li>
-            <li><a href="#">Civil y Penal</a></li>
-            <li><a href="#">Familia</a></li>
-            <li><a href="#">Laboral</a></li>
-            <li><a href="#">Administrativo</a></li>
+            <li><a href="service-details.html#extranjeria">Extranjería</a></li>
+            <li><a href="service-details.html#familia">Famiia</a></li>
+            <li><a href="service-details.html#civil">Civil</a></li>
+            <li><a href="service-details.html#laboral">Laboral</a></li>
+            <li><a href="service-details.html#penal">Penal</a></li>
+            <li><a href="service-details.html#administrativo">Administrativo</a></li>
           </ul>
         </div>
 
@@ -1262,6 +1302,32 @@
   </a>-->
   
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JavaScript para manejar el modal del sitemap -->
+  <script>
+   // Obtener los elementos
+   var modal = document.getElementById("sitemapModal");
+   var openModalBtn = document.getElementById("openModalBtn");
+   var closeModalBtn = document.getElementById("closeModalBtn");
+
+    // Función para abrir el modal
+    openModalBtn.onclick = function() {
+     modal.style.display = "block";
+   }
+
+    // Función para cerrar el modal
+    closeModalBtn.onclick = function() {
+      modal.style.display = "none";
+   }
+
+    // Cerrar el modal cuando el usuario hace clic fuera de él
+    window.onclick = function(event) {
+     if (event.target == modal) {
+       modal.style.display = "none";
+     }
+   }
+</script>
+
 
 </body>
 
