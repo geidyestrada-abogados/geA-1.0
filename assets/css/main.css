@@ -829,6 +829,60 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Hero-Services Section
+--------------------------------------------------------------*/
+/* Estilo hero para la página de servicios (imagen recortada) */
+.hero-services {
+  width: 100%;
+  height: 300px; /* Altura fija para la página de servicios */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 60px 0;
+  overflow: hidden;
+  background-size: cover; /* Mantener la imagen cubriendo el hero */
+  background-position: top center; /* Controlar qué parte de la imagen es visible */
+}
+
+.hero-services:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2  ; /* Overlay por encima de la imagen */
+}
+
+.hero-services img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 300px; /* Altura de la imagen */
+  object-fit: cover; /* Ajustar la imagen dentro del hero sin distorsión */
+  object-position: 50% 35%; /* Controla qué parte de la imagen se muestra */
+  z-index: 1; /* Imagen por debajo del overlay */
+}
+
+.hero-services .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-services h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.hero-services p {
+  margin: 10px 0 0 0;
+  font-size: 22px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
@@ -985,7 +1039,33 @@ section,
   transform: scale(1.05);  /* Un pequeño zoom al pasar el ratón */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);  /* Sombra más intensa en hover */
 }
-/*until here gpt
+/*until here gpt*/
+
+.hero .btn-scroll {
+  transition: 0.4s;
+  color: var(--default-color);
+  display: block;
+  margin-top: 30px;
+  animation: btn-up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+.hero .btn-scroll i {
+  font-size: 48px;
+}
+
+.hero .btn-scroll:hover {
+  color: var(--accent-color);
+}
+
+@keyframes btn-up-down {
+  0% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
 
 /*--------------------------------------------------------------
 # About Section
@@ -1349,6 +1429,83 @@ section,
 .services .service-item.item-pink:hover .icon path {
   fill: #f3268c;
 }
+
+/* gpt services list*/
+
+/* Estilo del contenedor padre para usar Flexbox */
+.container .row {
+  display: flex; /* Activa Flexbox */
+  align-items: flex-start; /* Alinea los elementos al inicio */
+}
+
+/* Ajustar la lista de servicios a la izquierda */
+.services-list {
+  width: 200px; /* Ancho fijo para el contenedor de la izquierda */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-right: 20px; /* Añadir espacio entre los contenedores */
+}
+
+/* Contenedor de la derecha */
+#service-content-wrapper {
+  flex: 1; /* Ocupa el resto del espacio disponible */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Estilo de la lista de servicios */
+.services-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list ul li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para las opciones de la lista */
+.services-list a {
+  display: block;
+  padding: 15px 20px;  /* Aumentar el padding para agrandar el área de clic */
+  background-color: #fff;  /* Color de fondo por defecto */
+  text-decoration: none;  /* Eliminar el subrayado del texto */
+  color: #333;  /* Color de la letra por defecto */
+  border: 1px solid #e0e0e0;  /* Borde por defecto */
+  border-radius: 6px;  /* Bordes redondeados */
+  width: 100%;  /* Ocupar el 100% del ancho del contenedor */
+  box-sizing: border-box;  /* Asegurar que el padding no expanda el tamaño del enlace */
+  text-align: center;  /* Centramos el texto */
+  transition: all 0.3s ease;  /* Suavizar las transiciones */
+}
+
+/* Cambiar el color del texto y el fondo al hacer hover */
+.services-list a:hover {
+  background-color: #2487ce;  /* Cambiar el color de fondo al hacer hover */
+  color: white !important;  /* Cambiar el color del texto a blanco con !important */
+  border-color: #2487ce;  /* Cambiar el color del borde al hacer hover */
+}
+
+/* Cambiar el color del texto y el fondo cuando el enlace está activo */
+.services-list a.active {
+  background-color: #2487ce;  /* Color de fondo cuando está activo */
+  color: white !important;  /* Color del texto a blanco cuando está activo */
+  border-color: #2487ce;  /* Color del borde cuando está activo */
+}
+  
+#service-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+
+/* gpt end*/
 
 /*--------------------------------------------------------------
 # Call To Action Section
