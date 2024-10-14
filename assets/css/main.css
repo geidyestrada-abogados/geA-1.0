@@ -12,13 +12,15 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #124265; /* Color for headings, subheadings and title throughout the website */
@@ -31,7 +33,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #124265;  /* The default color of the main navmenu links */
+  --nav-color: #124265; /* The default color of the main navmenu links */
   --nav-hover-color: #2487ce; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -108,7 +110,10 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
   border-radius: 50%;
   display: block;
   position: relative;
@@ -243,7 +248,8 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
 .header .logo {
@@ -348,7 +354,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -387,11 +393,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -403,7 +409,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -506,7 +512,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -533,7 +539,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -644,7 +650,7 @@ h6 {
   margin-bottom: 5px;
 }
 
-.copyright .info-item+.info-item {
+.copyright .info-item + .info-item {
   margin-top: 25px;
 }
 
@@ -777,11 +783,11 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -801,7 +807,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 76px;
@@ -850,7 +855,7 @@ section,
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
-  z-index: 2  ; /* Overlay por encima de la imagen */
+  z-index: 2; /* Overlay por encima de la imagen */
 }
 
 .hero-services img {
@@ -1028,16 +1033,16 @@ section,
 
 /* Estilos para imagen con borde blanco y sombra- GPT */
 .img-bordered-shadow {
-  border: 5px solid white;  /* Borde blanco de 5px */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);  /* Sombra suave */
-  border-radius: 8px;  /* Esquinas ligeramente redondeadas, opcional */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transiciones suaves para hover */
+  border: 5px solid white; /* Borde blanco de 5px */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  border-radius: 8px; /* Esquinas ligeramente redondeadas, opcional */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para hover */
 }
 
 /* Efecto al pasar el ratón por encima de la imagen */
 .img-bordered-shadow:hover {
-  transform: scale(1.05);  /* Un pequeño zoom al pasar el ratón */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);  /* Sombra más intensa en hover */
+  transform: scale(1.05); /* Un pequeño zoom al pasar el ratón */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* Sombra más intensa en hover */
 }
 /*until here gpt*/
 
@@ -1471,39 +1476,38 @@ section,
 /* Estilos para las opciones de la lista */
 .services-list a {
   display: block;
-  padding: 15px 20px;  /* Aumentar el padding para agrandar el área de clic */
-  background-color: #fff;  /* Color de fondo por defecto */
-  text-decoration: none;  /* Eliminar el subrayado del texto */
-  color: #333;  /* Color de la letra por defecto */
-  border: 1px solid #e0e0e0;  /* Borde por defecto */
-  border-radius: 6px;  /* Bordes redondeados */
-  width: 100%;  /* Ocupar el 100% del ancho del contenedor */
-  box-sizing: border-box;  /* Asegurar que el padding no expanda el tamaño del enlace */
-  text-align: center;  /* Centramos el texto */
-  transition: all 0.3s ease;  /* Suavizar las transiciones */
+  padding: 15px 20px; /* Aumentar el padding para agrandar el área de clic */
+  background-color: #fff; /* Color de fondo por defecto */
+  text-decoration: none; /* Eliminar el subrayado del texto */
+  color: #333; /* Color de la letra por defecto */
+  border: 1px solid #e0e0e0; /* Borde por defecto */
+  border-radius: 6px; /* Bordes redondeados */
+  width: 100%; /* Ocupar el 100% del ancho del contenedor */
+  box-sizing: border-box; /* Asegurar que el padding no expanda el tamaño del enlace */
+  text-align: center; /* Centramos el texto */
+  transition: all 0.3s ease; /* Suavizar las transiciones */
 }
 
 /* Cambiar el color del texto y el fondo al hacer hover */
 .services-list a:hover {
-  background-color: #2487ce;  /* Cambiar el color de fondo al hacer hover */
-  color: white !important;  /* Cambiar el color del texto a blanco con !important */
-  border-color: #2487ce;  /* Cambiar el color del borde al hacer hover */
+  background-color: #2487ce; /* Cambiar el color de fondo al hacer hover */
+  color: white !important; /* Cambiar el color del texto a blanco con !important */
+  border-color: #2487ce; /* Cambiar el color del borde al hacer hover */
 }
 
 /* Cambiar el color del texto y el fondo cuando el enlace está activo */
 .services-list a.active {
-  background-color: #2487ce;  /* Color de fondo cuando está activo */
-  color: white !important;  /* Color del texto a blanco cuando está activo */
-  border-color: #2487ce;  /* Color del borde cuando está activo */
+  background-color: #2487ce; /* Color de fondo cuando está activo */
+  color: white !important; /* Color del texto a blanco cuando está activo */
+  border-color: #2487ce; /* Color del borde cuando está activo */
 }
-  
+
 #service-image {
   max-width: 100%;
   height: auto;
   margin-top: 20px;
   border-radius: 8px;
 }
-
 
 /* gpt end*/
 
@@ -1924,7 +1928,7 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   margin-top: 40px;
 }
 
@@ -1959,31 +1963,35 @@ section,
   height: 100%;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1992,7 +2000,7 @@ section,
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -2033,7 +2041,6 @@ section,
 }
 
 @media (max-width: 575px) {
-
   .portfolio-details .swiper-button-prev,
   .portfolio-details .swiper-button-next {
     display: none;
@@ -2185,7 +2192,8 @@ section,
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid
+    color-mix(in srgb, var(--default-color), transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
@@ -2240,6 +2248,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
