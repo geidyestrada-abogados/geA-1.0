@@ -41,15 +41,7 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 
     <!-- CSS del Sitemap -->
-    <link href="assets/css/map.css" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: OnePage
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <link href="assets/css/map.css" rel="stylesheet" />
   </head>
 
   <body class="service-details-page">
@@ -108,67 +100,164 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <!-- <a class="btn-getstarted" href="#about">Get Started</a> -->
-
         <!-- Widget de Google Translate -->
-     
-    <div id="google_translate_element" style="border: 1px solid #cccccc; padding: 5px; border-radius: 10px; margin-left: 60px;"></div>
 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'es', // Idioma original de la página
-                includedLanguages: 'en,es,fr,de,it,ca,ru', // Limitar los idiomas disponibles
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
+        <div
+          id="google_translate_element"
+          style="
+            border: 1px solid #cccccc;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 60px;
+          "
+        ></div>
 
-        // Cambiar el texto "Select Language"
-        document.addEventListener("DOMContentLoaded", function() {
-            const translateCombo = document.querySelector('.goog-te-combo');
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              {
+                pageLanguage: "es", // Idioma original de la página
+                includedLanguages: "en,es,fr,de,it,ca,ru", // Limitar los idiomas disponibles
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+              },
+              "google_translate_element"
+            );
+          }
+
+          // Cambiar el texto "Select Language"
+          document.addEventListener("DOMContentLoaded", function () {
+            const translateCombo = document.querySelector(".goog-te-combo");
             if (translateCombo) {
-                translateCombo.setAttribute('data-placeholder', 'Selecciona un idioma');
+              translateCombo.setAttribute(
+                "data-placeholder",
+                "Selecciona un idioma"
+              );
             }
-        });
-    </script>
+          });
+        </script>
 
-    <!-- Script de Google Translate -->
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
+        <!-- Script de Google Translate -->
+        <script
+          type="text/javascript"
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
+      </div>
     </header>
 
     <!-- Modal para el mapa del sitio -->
     <div id="sitemapModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeModalBtn">&times;</span>
-      <h2>Mapa del Sitio de <b>Geidy Estrada | Abogados</b>  </h2>
-      <ul>
-        <li><a href="index.html#hero"><h5><b>Inicio</b> <i>(Inicio de la página principal)</i></h5></a></li>
-        <li><a href="index.html#about"><h5><b>Acerca</b> <i>(Información general del despacho)</i></h5></a></li>
-        <li><a href="index.html#office"><h5><b>Oficina</b> <i>(detalles sobre la oficina del despacho)</i></h5></a></li>
-        <li>
-          <a href="index.html#services"><h5><b>Servicios</b><i> (Acceso a todos los servicios del despacho)</i></h5></a>
-          <ul>
-            <li><a href="service-details.html#extranjeria"><h6><b>Derecho de Extranjería</b><i> (Detalles del servicio)</i></h6></a></li>
-            <li><a href="service-details.html#familia"><h6><b>Derecho de Familia</b><i> (Detalles del servicio)</i></h6></a></li>
-            <li><a href="service-details.html#civil"><h6><b>Derecho Civil</b><i> (Detalles del servicio)</i></h6></a></li>
-            <li><a href="service-details.html#laboral"><h6><b>Derecho Laboral</b><i> (Detalles del servicio)</i></h6></a></li>
-            <li><a href="service-details.html#penal"><h6><b>Derecho Penal</b><i> (Detalles del servicio)</i></h6></a></li>
-            <li><a href="service-details.html#administrativo"><h6><b>Derecho Administrativo</b><i> (Detalles del servicio)</i></h6></a></li>
-          </ul>
-        </li>
-        <li>
-         <a href="#"><h5><b>Varios</b><i> (Submenú con otras secciones)</i></h5></a>
-         <ul>
-           <li><a href="index.html#testimonials"><h5><b>Testimonios</b><i> (Testimonios de cllientes reales)</i></h5></a></li>
-           <li><a href="index.html#team"><h5><b>Equipo de Trabajo</b><i> (Presentación del equipo)</i></h5></a></li>
-           <li><a href="index.html#faq"><h5><b>FAQs</b><i> (Preguntas frecuentes y sus respuestas)</i></h5></a></li>
-         </ul>
-           </li>
-         <li><a href="index.html#contact"><h5><b>Contacto</b><i> (Todos los datos para contactarnos)</i></h5></a></li>
-       </ul>
-     </div>
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <h2>Mapa del Sitio de <b>Geidy Estrada | Abogados</b></h2>
+        <ul>
+          <li>
+            <a href="index.html#hero"
+              ><h5><b>Inicio</b> <i>(Inicio de la página principal)</i></h5></a
+            >
+          </li>
+          <li>
+            <a href="index.html#about"
+              ><h5>
+                <b>Acerca</b> <i>(Información general del despacho)</i>
+              </h5></a
+            >
+          </li>
+          <li>
+            <a href="index.html#office"
+              ><h5>
+                <b>Oficina</b> <i>(detalles sobre la oficina del despacho)</i>
+              </h5></a
+            >
+          </li>
+          <li>
+            <a href="index.html#services"
+              ><h5>
+                <b>Servicios</b
+                ><i> (Acceso a todos los servicios del despacho)</i>
+              </h5></a
+            >
+            <ul>
+              <li>
+                <a href="service-details.html#extranjeria"
+                  ><h6>
+                    <b>Derecho de Extranjería</b><i> (Detalles del servicio)</i>
+                  </h6></a
+                >
+              </li>
+              <li>
+                <a href="service-details.html#familia"
+                  ><h6>
+                    <b>Derecho de Familia</b><i> (Detalles del servicio)</i>
+                  </h6></a
+                >
+              </li>
+              <li>
+                <a href="service-details.html#civil"
+                  ><h6>
+                    <b>Derecho Civil</b><i> (Detalles del servicio)</i>
+                  </h6></a
+                >
+              </li>
+              <li>
+                <a href="service-details.html#laboral"
+                  ><h6>
+                    <b>Derecho Laboral</b><i> (Detalles del servicio)</i>
+                  </h6></a
+                >
+              </li>
+              <li>
+                <a href="service-details.html#penal"
+                  ><h6>
+                    <b>Derecho Penal</b><i> (Detalles del servicio)</i>
+                  </h6></a
+                >
+              </li>
+              <li>
+                <a href="service-details.html#administrativo"
+                  ><h6>
+                    <b>Derecho Administrativo</b><i> (Detalles del servicio)</i>
+                  </h6></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"
+              ><h5><b>Varios</b><i> (Submenú con otras secciones)</i></h5></a
+            >
+            <ul>
+              <li>
+                <a href="index.html#testimonials"
+                  ><h5>
+                    <b>Testimonios</b><i> (Testimonios de cllientes reales)</i>
+                  </h5></a
+                >
+              </li>
+              <li>
+                <a href="index.html#team"
+                  ><h5>
+                    <b>Equipo de Trabajo</b><i> (Presentación del equipo)</i>
+                  </h5></a
+                >
+              </li>
+              <li>
+                <a href="index.html#faq"
+                  ><h5>
+                    <b>FAQs</b><i> (Preguntas frecuentes y sus respuestas)</i>
+                  </h5></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html#contact"
+              ><h5>
+                <b>Contacto</b><i> (Todos los datos para contactarnos)</i>
+              </h5></a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Modal for Enlarged Image -->
@@ -265,45 +354,6 @@
 
       <!-- Service Details Section -->
       <section id="service-details" class="service-details section">
-        <!--
-    <div class="container">
-       
-      <div class="row gy-4">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="services-list">
-            <a href="#" class="active">Extranjería</a>
-            <a href="#">Familia</a>
-            <a href="#">Civil</a>
-            <a href="#">Laboral</a>
-            <a href="#">Penal</a>
-            <a href="#">Administrativo</a>
-          </div>
-
-          <h4>Derecho de Extranjería</h4>
-          <p>El derecho de extranjería es una rama del derecho que regula y protege los derechos y obligaciones de las personas extranjeras que desean residir, trabajar o estudiar en un país distinto al de su origen.</br></br>
-             Nuestro despacho está especializado en este tipo de procedimientos, ofreciendo una asesoría integral a individuos y empresas en todo lo relacionado con la inmigración y la regularización de su situación legal en el país.</p>
-        </div>
-
-        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/img/extranjeria.jpg" alt="" class="img-fluid services-img">
-          <h3>¿En qué podemos ayudarte?</h3>
-          <ul>
-            <li><i class="bi bi-check-circle"></i> <span><strong><i>Permisos de residencia y trabajo:</i></strong><br/>Asistimos en la obtención de permisos de residencia, ya sea temporal o permanente, así como en la tramitación de permisos de trabajo para extranjeros. Ya sea que planees venir a trabajar, emprender un negocio o reunirte con tu familia.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span><strong><i>Reagrupación familiar:</i></strong><br/>Si eres residente y deseas que tu familia se reúna contigo, nuestro equipo te ayudará a tramitar la reagrupación familiar. Te brindamos todo el apoyo necesario para que tus seres queridos puedan unirse a ti de manera legal y segura.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span><strong><i>Nacionalidad:</i></strong><br/>Ofrecemos asesoramiento y gestión de trámites para la obtención de la nacionalidad. Desde la recopilación de documentos hasta la representación legal en procedimientos complejos, nos encargamos de todo para que puedas convertirte en ciudadano del país sin complicaciones.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span><strong><i>Regularización y expulsiones:</i></strong><br/>Si te encuentras en situación irregular o enfrentas un posible proceso de expulsión, nuestros abogados están aquí para defender tus derechos. Luchamos por tu regularización y buscamos soluciones legales para evitar que seas deportado.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span><strong><i>5. Visados y autorizaciones especiales:</i></strong><br/>Gestionamos todo tipo de visados, como visados de estudiantes, de emprendedores, o de inversores. También te ayudamos con autorizaciones de estancia por estudios o con el inicio de un proyecto empresarial en el país.</span></li>
-          </ul>
-          <h4>
-            ¿Por qué elegirnos?
-          </h4>
-          <p>
-            En nuestro despacho de abogados, contamos con amplia experiencia en el área del derecho de extranjería. Ofrecemos un servicio personalizado, adaptándonos a cada situación particular para garantizar los mejores resultados posibles. Entendemos lo importante que es para ti y tu familia establecerse legalmente en el país, por lo que nuestro compromiso es acompañarte durante todo el proceso, desde la planificación hasta la resolución favorable de tu caso.
-          </p>
-        </div>
-      </div>
-    </div> -->
-
         <div class="container">
           <div class="row">
             <!-- Contenedor de la izquierda: Lista de servicios -->
@@ -622,10 +672,6 @@
           <span>All Rights Reserved</span>
         </p>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Diseñado por
           <a href="https://www.digitalizacionintegral.com/" target="_blank"
             ><strong>Digitalización Integral</strong></a
@@ -1017,22 +1063,52 @@
       var closeModalBtn = document.getElementById("closeModalBtn");
 
       // Función para abrir el modal
-      openModalBtn.onclick = function() {
-      modal.style.display = "block";
-      }
+      openModalBtn.onclick = function () {
+        modal.style.display = "block";
+      };
 
       // Función para cerrar el modal
-      closeModalBtn.onclick = function() {
-       modal.style.display = "none";
-      }
+      closeModalBtn.onclick = function () {
+        modal.style.display = "none";
+      };
 
       // Cerrar el modal cuando el usuario hace clic fuera de él
-      window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-       }
-     }
-  </script>
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
 
+    <script>
+      // Código gpt para resolver el problema por el backdrop del bloqueo de los modales de los logos y permitir que cierren al hacer click fuera de ellos
+      // Obtener el modal
+      var logoModalElement = document.getElementById("logoModal");
+      var logoModal2Element = document.getElementById("logoModal2");
+
+      // Inicializar el modal sin backdrop
+      var logoModal = new bootstrap.Modal(logoModalElement, {
+        backdrop: false, // Sin backdrop
+        keyboard: true, // Permitir cerrar con la tecla ESC
+      });
+
+      var logoModal2 = new bootstrap.Modal(logoModal2Element, {
+        backdrop: false,
+        keyboard: true,
+      });
+
+      // Detectar clic fuera del modal y cerrarlo
+      logoModalElement.addEventListener("click", function (event) {
+        if (event.target === logoModalElement) {
+          logoModal.hide();
+        }
+      });
+
+      logoModal2Element.addEventListener("click", function (event) {
+        if (event.target === logoModal2Element) {
+          logoModal2.hide();
+        }
+      });
+    </script>
   </body>
 </html>
